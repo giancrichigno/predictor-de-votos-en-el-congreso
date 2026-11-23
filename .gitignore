@@ -1,0 +1,6 @@
+Datos/votos_expandidos.csv
+Datos/votos_limpios.csv
+Datos/votos_macrocoaliciones.csv
+Datos/dataset_features.csv
+.ipynb_checkpoints/
+__pycache__/
