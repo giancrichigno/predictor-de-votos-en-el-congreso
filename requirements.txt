@@ -4,3 +4,5 @@ joblib
 requests
 beautifulsoup4
 google-genai
+streamlit
+altair

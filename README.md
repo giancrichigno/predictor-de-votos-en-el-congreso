@@ -28,6 +28,7 @@ Fuentes:
 | `dataset.ipynb` | Expande y limpia los votos, asigna macrocoaliciones y calcula las variables |
 | `modelo.ipynb` | Entrena y evalúa el Random Forest y guarda `modelo_random_forest.pkl` |
 | `Agente/agente.ipynb` | Recibe un proyecto, lo clasifica con Gemini y predice el voto de cada diputado |
+| `Agente/app.py` | Página web del predictor, hecha con Streamlit |
 | `modelo_random_forest.pkl` | Modelo entrenado |
 | `Datos/` | Datos de entrada |
 
@@ -38,6 +39,7 @@ Fuentes:
 3. Correr `dataset.ipynb`. Genera en `Datos/` los CSV intermedios y `dataset_features.csv`. No están en el repositorio porque pesan más de 100 MB cada uno.
 4. Correr `modelo.ipynb`.
 5. Correr `Agente/agente.ipynb`. Pide una clave de Gemini, que se crea en [Google AI Studio](https://aistudio.google.com/api-keys). Se ingresa oculta con `getpass` y no queda guardada en el notebook.
+6. Para usar la página web: `python -m streamlit run Agente/app.py`. Se abre en `http://localhost:8501`. La clave de Gemini se ingresa en la barra lateral y no se guarda. Necesita `Datos/dataset_features.csv`, que genera `dataset.ipynb`.
 
 ## Modelo
 
